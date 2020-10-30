@@ -1,28 +1,13 @@
-//typeof
-
-var a=3;
-console.log(typeof a);
-
-var b = "Hello";
-console.log(typeof b);
-
-var c = {};
-console.log(typeof c);
-
-var d =[];
-console.log(typeof d); //weird!
-console.log(Object.prototype.toString.call(d));
-
-function Person(name){
-    this.name=name;
+// Strict mode
+function logNewPerson() {
+    "use strict";
+    
+    var person2;
+    persom2={};
+    console.log(persom2);
 }
+var person;
 
-var e = new Person('Jane');
-console.log(typeof e);
-console.log(e instanceof Person);
-
-console.log(typeof undefined);
-console.log(typeof null);
-
-var z = function() { };
-console.log(typeof z);
+persom={};
+console.log(persom);
+logNewPerson();
