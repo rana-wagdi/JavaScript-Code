@@ -3,14 +3,30 @@
 
     </head>
     <body>
-        <div id="main" class="container">
-            <h1>People</h1>
-            <ul class="people">
-                <li>John Doe</li>
-                <li>Jane Doe</li>
-                <li>Juim Doe</li>
-            </ul>
-        </div>
+        <button onclick="forinSample();">for/in sample</button>
+
+<script>
+    'use strict'
+
+    //using a for/in loop
+    function forinSample(){
+        let product = {
+            "productID":680,
+            "name":"HL Road Frame - Black, 58",
+            "productNumber":"Fr-R92B-58",
+            "standardCost":1059.31,
+            "listPrice":1431.50,
+            calculateGrossProfit: function(){
+                return this.listPrice - this.standardCost;
+            }
+        };
+
+        for (const key in product){
+            console.log("'"+key+"'=" + product[key]);
+        }
+    }
+</script>
+
         <script src="jquery-1.11.2.js"></script>
         <script src="Greetr.js"></script>
         <script src="app.js"></script>
