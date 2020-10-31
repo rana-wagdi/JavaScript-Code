@@ -1,3 +1,4 @@
-// Code jQuery
-var q = $("ul.people li");
-console.log(q)
+// Code Greetr
+
+var g = G$('John', 'Doe');
+console.log(g);
