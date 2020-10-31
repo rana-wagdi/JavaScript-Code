@@ -3,28 +3,36 @@
 
     </head>
     <body>
-        <button onclick="forinSample();">for/in sample</button>
+        <button onclick="forofSample();">for/of sample</button>
 
 <script>
-    'use strict'
+    'use strict';
 
     //using a for/in loop
-    function forinSample(){
-        let product = {
+
+        let _products = [
+        {
             "productID":680,
             "name":"HL Road Frame - Black, 58",
             "productNumber":"Fr-R92B-58",
             "standardCost":1059.31,
-            "listPrice":1431.50,
-            calculateGrossProfit: function(){
-                return this.listPrice - this.standardCost;
+            "listPrice":1431.50
+            },
+            {
+            "productID":680,
+            "name":"HL Road Frame - Black, 58",
+            "productNumber":"Fr-R92B-58",
+            "standardCost":1059.31,
+            "listPrice":1431.50
             }
-        };
-
-        for (const key in product){
-            console.log("'"+key+"'=" + product[key]);
+        ];
+        
+        function forofSample(){
+        for (const item of _products){
+            console.log(JSON.stringify(item));
         }
     }
+    
 </script>
 
         <script src="jquery-1.11.2.js"></script>
