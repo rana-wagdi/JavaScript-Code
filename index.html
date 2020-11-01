@@ -3,36 +3,22 @@
 
     </head>
     <body>
-        <button onclick="forofSample();">for/of sample</button>
+        <button onclick="labelSample();">Labeled statement</button>
 
 <script>
     'use strict';
 
     //using a for/in loop
 
-        let _products = [
-        {
-            "productID":680,
-            "name":"HL Road Frame - Black, 58",
-            "productNumber":"Fr-R92B-58",
-            "standardCost":1059.31,
-            "listPrice":1431.50
-            },
-            {
-            "productID":680,
-            "name":"HL Road Frame - Black, 58",
-            "productNumber":"Fr-R92B-58",
-            "standardCost":1059.31,
-            "listPrice":1431.50
-            }
-        ];
-        
-        function forofSample(){
-        for (const item of _products){
-            console.log(JSON.stringify(item));
-        }
-    }
-    
+       function labelSample(){
+           even:
+           for(let index = 1; index <=10;index++){
+               if (index %2==1){
+                   continue even;
+               }
+               console.log(index);
+           }
+       }
 </script>
 
         <script src="jquery-1.11.2.js"></script>
