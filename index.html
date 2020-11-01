@@ -3,26 +3,18 @@
 
     </head>
     <body>
-        <button onclick="useStrictSample();">'use strict'</button>
+        <button onclick="simpleTryCatch();">Simple Try Catch</button>
 
 <script>
-    function useStrictSample() {
-        'use strict';
-        //can't use a variable without 'var' or 'let' keyword
-        result = 10;
-        console.log(result);
+function simpleTryCatch(){
+    let result;
+
+    try {
+        result= x / 10;
+    } catch (error) {
+        console.log(error.message)
     }
-    //can't use reserved words as variables
-    let eval = 10;
-    let arguments="some args";
-
-    //can't delete a varible 
-    delete result;
-
-    //can't delete a function
-    delete useStrictSample;
-    
-
+}
     
 </script>
 
