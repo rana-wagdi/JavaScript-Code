@@ -3,27 +3,27 @@
 
     </head>
     <body>
-        <button onclick="mathSample();">Math</button>
+        <button onclick="useStrictSample();">'use strict'</button>
 
 <script>
-    'use strict';
+    function useStrictSample() {
+        'use strict';
+        //can't use a variable without 'var' or 'let' keyword
+        result = 10;
+        console.log(result);
+    }
+    //can't use reserved words as variables
+    let eval = 10;
+    let arguments="some args";
 
-    //using a for/in loop
+    //can't delete a varible 
+    delete result;
 
-       function mathSample(){
-           let price =200;
-           let result=0;
+    //can't delete a function
+    delete useStrictSample;
+    
 
-           console.log("price = "+price.toString());
-
-           //Decrement
-           result = price--;
-           console.log("result = price-- = "+result.toString());
-           console.log("price = "+price.toString());
-           result = --price;
-           console.log("result = -price" + result.toString());
-       }
-
+    
 </script>
 
         <script src="jquery-1.11.2.js"></script>
