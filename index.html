@@ -3,22 +3,27 @@
 
     </head>
     <body>
-        <button onclick="labelSample();">Labeled statement</button>
+        <button onclick="mathSample();">Math</button>
 
 <script>
     'use strict';
 
     //using a for/in loop
 
-       function labelSample(){
-           even:
-           for(let index = 1; index <=10;index++){
-               if (index %2==1){
-                   continue even;
-               }
-               console.log(index);
-           }
+       function mathSample(){
+           let price =200;
+           let result=0;
+
+           console.log("price = "+price.toString());
+
+           //Increment
+           result = price++;
+           console.log("result = price++ = "+result.toString());
+           console.log("price = "+price.toString());
+           result = ++price;
+           console.log("result = ++price" + result.toString());
        }
+
 </script>
 
         <script src="jquery-1.11.2.js"></script>
