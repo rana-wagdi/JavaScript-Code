@@ -4,17 +4,22 @@
     </head>
     <body>
         <!--Note IE and Edge do not support the Spread operator-->
-        <button onclick="StringToArray()">Convert string to array</button>
+        <button onclick="copyArray()">Copy</button>
 
 <script>
     //String to array
 
-    function StringToArray(){
-        let productNumber = "FR-R92B-58";
+    function copyArray(){
+        let arr = [1,2,3];
+        let arr2=[...arr];
+        
+        //Make changes to duplicated array
+        arr2.push(4);
+        arr2[0]=99;
 
-        let values = [...productNumber];
 
-        console.log(values);
+        console.log(arr);
+        console.log(arr2);
     }
 </script>
 
