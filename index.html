@@ -3,31 +3,19 @@
 
     </head>
     <body>
-        <button onclick="throwError()">throw error</button>
+        <!--Note IE and Edge do not support the Spread operator-->
+        <button onclick="StringToArray()">Convert string to array</button>
 
 <script>
-    function throwError(){
-        try {
-            attemptDivision();
-        }catch (error) {
-            console.log(error.message+" - Error Type: "+ error.name);
-        }
-    }
+    //String to array
 
-function attemptDivision(){
-    let result;
+    function StringToArray(){
+        let productNumber = "FR-R92B-58";
 
-    try {
-        result= x / 10;
-    } catch (error) {
-        //Always include at least a 'message' and 'name' properties
-        throw{
-            "message": "In the attempDivision() method the following error occurres: " +error.message,
-            "name":"CustomError"
-        };
+        let values = [...productNumber];
+
+        console.log(values);
     }
-}
-    
 </script>
 
         <script src="jquery-1.11.2.js"></script>
