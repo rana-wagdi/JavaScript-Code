@@ -1,4 +1,7 @@
 var tweet=prompt("Compose your tweet");
-var tweetCounts = tweet.length;
+var tweetCounts = tweet.slice(0,11);
 
-alert("you have write a " +tweetCounts+" character you only have"+ ((140)-tweetCounts) );
+
+
+ var count=alert("you have write a " +tweet.length+" character you only have"+ ((10)-tweetCounts) );
+console.log(tweetCounts);
