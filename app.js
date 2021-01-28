@@ -1,5 +1,7 @@
-var myName = "Rana";
+var message= "Hello";
+var name = "Rana";
 
-var yourName = prompt("what is your name")
-
-alert("my name is "+myName+"welcome to my course "+ yourName+"!")
+//write your code below this line
+alert(message+" my name is " + name);
+prompt(message+" my name is"+" "+name +" what is your name");
+alert("welcome")
