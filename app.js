@@ -1,7 +1,4 @@
-var message= "Hello";
-var name = "Rana";
+var tweet=prompt("Compose your tweet");
+var tweetCounts = tweet.length;
 
-//write your code below this line
-alert(message+" my name is " + name);
-prompt(message+" my name is"+" "+name +" what is your name");
-alert("welcome")
+alert("you have write a " +tweetCounts+" character you only have"+ ((140)-tweetCounts) );
