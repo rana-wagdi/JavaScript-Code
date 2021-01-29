@@ -1,11 +1,5 @@
- var name =prompt("What is your name!");
+var dogAge = prompt("what is your dog age?");
 
-var firstChar = name.slice(0,1);
-var lastChar = name.slice(1,name.length);
+var humanAge=(dogAge-2)*4+21;
 
-var upperCase=firstChar.toUpperCase();
-var lowerCase = lastChar.toLowerCase();
-
-
-var capital=upperCase + lowerCase;
-alert("Hello, "+capital+" "+"!");
+alert("YOUR DOG HUMEN AGE: " +humanAge);
