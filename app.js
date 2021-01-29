@@ -1,7 +1,7 @@
-var tweet=prompt("Compose your tweet");
-var tweetCounts = tweet.slice(0,11);
+ var name =prompt("What is your name!");
 
+var firstChar = name.slice(0,1);
 
-
- var count=alert("you have write a " +tweet.length+" character you only have"+ ((10)-tweetCounts) );
-console.log(tweetCounts);
+var upperCase=firstChar.toUpperCase();
+var capital=upperCase + name.slice(1,name.length);
+alert("Hello, "+capital);
