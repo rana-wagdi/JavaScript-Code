@@ -1,5 +1,23 @@
-var dogAge = prompt("what is your dog age?");
+function lifeInWeeks(age) {
+  /************Don't change the code above************/
 
-var humanAge=(dogAge-2)*4+21;
+  //Write your code here.
+  var daysRemaning = 90 - age;
 
-alert("YOUR DOG HUMEN AGE: " +humanAge);
+  var days = daysRemaning * 365;
+  var weeks = Math.floor(daysRemaning * 52);
+  var years = Math.floor(daysRemaning* 12);
+
+  console.log(
+    "You have " +
+      days +
+      " days, " +
+      weeks +
+      " weeks, and " +
+      years +
+      " months left."
+  );
+
+  /*************Don't change the code below**********/
+}
+lifeInWeeks(56);
