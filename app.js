@@ -1,6 +1,6 @@
-var namePerson1 = prompt("what is name person 1");
-var namePerson2 = prompt("what is the name person 2");
-var calculate = Math.random();
-calculate = calculate * 100;
-calculate =Math.floor(calculate +1);
-console.log(calculate);
+prompt("what is our name?");
+prompt("what is their name?");
+
+var loveScore=Math.random()*100;
+loveScore=Math.floor(loveScore+1);
+alert("Your love score is "+loveScore +"%");
