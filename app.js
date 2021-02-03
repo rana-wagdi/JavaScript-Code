@@ -1,15 +1,20 @@
-function whosPaying(names) {
-  /******Don't change the code above*******/
+var output =[];
+var count = 1;
 
-  //Write your code here.
 
-   names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
-
-    var nameOnList= names[Math.floor(Math.random()*names.length)];
-   personBuyLunch = nameOnList + " is going to buy lunch today!";
-
-  return personBuyLunch;
-
-  /******Don't change the code below*******/
+function fizzBuzz(){
+    while (count <= 100) {
+      if (count % 3 === 0 && count % 5 === 0) {
+        output.push("fizzBuzz");
+      } else if (count % 3 === 0) {
+        output.push("fizz");
+      } else if (count % 5 === 0) {
+        output.push("Buzz");
+      } else {
+        output.push(count);
+      }
+      count++;
+     
+    }
+     console.log(output);
 }
-whosPaying();
