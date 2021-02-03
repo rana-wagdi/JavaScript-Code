@@ -1,19 +1,11 @@
 var output =[];
-var count = 1;
+var count = 100;
 
 
 function fizzBuzz(){
-    while (count <= 100) {
-      if (count % 3 === 0 && count % 5 === 0) {
-        output.push("fizzBuzz");
-      } else if (count % 3 === 0) {
-        output.push("fizz");
-      } else if (count % 5 === 0) {
-        output.push("Buzz");
-      } else {
-        output.push(count);
-      }
-      count++;
+    for (count=100; count>=0;count--) {
+      console.log(count+"bottls of beer")
+      count--;
      
     }
      console.log(output);
